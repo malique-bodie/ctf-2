@@ -27,19 +27,19 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
    "\x68" "\x74\x78\x74\x2e"		// push "magic.txt"
    "\x68" "\x63\x69\x67\x61"
-   "\x6a" "\x6d"
+   "\x6a\x6d"
 
    "\x89\xe3"               	//mov    %esp,%ebx
    "\x6a\x01"                	//push   $0x1
    "\x59"                   	//pop    %ecx
-   "\x31\xd2 "               	//xor    %edx,%edx
+   "\x31\xd2"               	//xor    %edx,%edx
    "\x6a\x05"                	//push   $0x5
    "\x58"                   	//pop    %eax
    "\xcd\x80"                	//int    $0x80
-   "\x89\xc3 "               	//mov    %eax,%ebx
+   "\x89\xc3"               	//mov    %eax,%ebx
    "\x68" "\x79\x7a\x7a\x79"	// push "xyyzz"
    "\x6a" "\x78"
-   "\x89\xe1 "              	//mov    %esp,%ecx
+   "\x89\xe1"              	//mov    %esp,%ecx
    "\x6a\x05"               	//push   $0x5
    "\x5a"                   	//pop    %edx
    "\x6a\x05"               	//push   $0x5
