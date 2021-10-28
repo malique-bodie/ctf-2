@@ -25,7 +25,7 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/*
-	mov $0x2f, %eax
+	mov $0x14, %eax
 	int 80
 	mov %eax, %ebx
 	mov $0x0a, %ecx
@@ -33,7 +33,7 @@ unsigned char payload[] =
 	int 80
 	*/
 	/* ------------------------------------	*/
-	"\x50\xCD\x00\x00\x00\x00\xA3\x00\x00\x00\x00\x0D\x89\xD8\x89\x50\xCD\x00\x00\x00\x00\xA3";
+	"\x80\xCD\x00\x00\x00\x00\xA3\x00\x00\x00\x00\x0D\x89\xD8\x89\x80\xCD\x00\x00\x00\x00\xA3";
 	/* ------------------------------------	*/
 
 
