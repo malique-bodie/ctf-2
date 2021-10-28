@@ -1,9 +1,15 @@
-push $0x14
+mov %esp, %ebx
+push $0x01
+pop %ecx
+xor %edx, %edx
+push $0x05
 pop %eax
 int $0x80
 mov %eax, %ebx
-push $0x0a
-pop %ecx
-push $0x25
+mov %esp, %ecx
+push $0x05
+pop %edx
+push $0x05
 pop %eax
 int $0x80
+

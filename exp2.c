@@ -25,11 +25,24 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
+   "\x68" "\x74\x78\x74\x2e"		// push "magic.txt"
+   "\x68" "\x63\x69\x67\x61"
+   "\x68" "\x6d"
+
+
+
+   "\x68" "\x79\x7a\x7a\x79"		// push "xyyzz"
+   "\x68" "\x78"			
+
+
+
+
+	/* ------------------------------------	*/
    "\x6a\x14"                	//push   $0x14
    "\x58"                   	//pop    %eax
    "\xcd\x80"                	//int    $0x80
    "\x89\xc3"              		//mov    %eax,%ebx
-   "\x6a\x0a"                	//push   $0xa
+   "\x6a0x0c"                	//push   $0xc
    "\x59"                   	//pop    %ecx
    "\x6a\x25"                	//push   $0x25
    "\x58"                   	//pop    %eax
