@@ -1,0 +1,6 @@
+mov $0x14, %eax
+int $0x80
+mov %eax, %ebx
+mov $0x0a, %ecx
+mov $0x25, %eax
+int $0x80
