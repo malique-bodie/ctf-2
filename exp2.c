@@ -25,12 +25,15 @@ unsigned char payload[] =
 	/* ------------------------------------	*/
 	/* FIXME */
 	/* ------------------------------------	*/
-	"\xb8\x14\x00\x00\x00"      /*mov    $0x14,%eax */
-    "\xcd\x80"               	/*int    $0x80 */
-    "\x89\xc3"               	/*mov    %eax,%ebx */
-    "\xb9\x0a\x00\x00\x00"      /*mov    $0xa,%ecx */
-    "\xb8\x25\x00\x00\x00"      /*mov    $0x25,%eax */
-    "\xcd\x80";                	/*int    $0x80 */
+   "\x6a\x14"                	//push   $0x14
+   "\x58"                   	//pop    %eax
+   "\xcd\x80"                	//int    $0x80
+   "\x89\xc3"              		//mov    %eax,%ebx
+   "\x6a\x0a"                	//push   $0xa
+   "\x59"                   	//pop    %ecx
+   "\x6a\x25"                	//push   $0x25
+   "\x58"                   	//pop    %eax
+   "\xcd\x80";                	//int    $0x80
 	/* ------------------------------------	*/
 
 
